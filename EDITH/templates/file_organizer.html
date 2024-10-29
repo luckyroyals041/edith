@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organizer - EDITH</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/file_organizer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="tools">
+                <div class="circle"><span class="red box"></span></div>
+                <div class="circle"><span class="yellow box"></span></div>
+                <div class="circle"><span class="green box"></span></div>
+            </div>
+            <div class="card__content">
+                <h2>File Organizer</h2>
+                <div id="mobile-warning" class="mobile-warning" style="display: none;">
+                    <p>⚠️ This tool is not available for mobile devices.</p>
+                    <p>Please use a desktop computer to access this feature.</p>
+                    <button onclick="window.location.href='/'" class="back-button">Back to Home</button>
+                </div>
+                <div id="desktop-content" class="file-input">
+                    <div class="path-input-group">
+                        <input type="text" id="folder-path" placeholder="Enter folder path (e.g., C:\)">
+                        <button onclick="openFolderDialog()" class="browse-btn">Browse</button>
+                    </div>
+                    <button onclick="organizeFiles()" class="organize-btn">Organize Files</button>
+                    <button onclick="window.location.href='/'" class="back-button">Back to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/file_organizer.js"></script>
+</body>
+</html> 

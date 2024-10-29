@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator - EDITH</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/qr_generator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="tools">
+                <div class="circle">
+                    <span class="red box"></span>
+                </div>
+                <div class="circle">
+                    <span class="yellow box"></span>
+                </div>
+                <div class="circle">
+                    <span class="green box"></span>
+                </div>
+            </div>
+            <div class="card__content">
+                <h2>QR Code Generator</h2>
+                <div class="qr-container">
+                    <input type="text" id="qr-text" placeholder="Enter text for QR code">
+                    <button onclick="generateQR()" class="generate-btn">Generate QR</button>
+                    <div id="qr-result" style="margin-top: 20px; display: none;">
+                        <img id="qr-image" src="" alt="QR Code">
+                        <br>
+                        <a id="download-link" href="" download="qr-code.png" class="download-button">
+                            Download QR Code
+                        </a>
+                    </div>
+                    <button onclick="window.location.href='/'" class="back-button">Back to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/qr_generator.js"></script>
+</body>
+</html> 

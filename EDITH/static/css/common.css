@@ -1,0 +1,78 @@
+/* Common styles used across all pages */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    background: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    background: #1a1a1a;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red { background: #ff605c; }
+.yellow { background: #ffbd44; }
+.green { background: #00ca4e; }
+
+.card__content {
+    padding: 20px;
+    color: #fff;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.back-button {
+    width: 100%;
+    padding: 12px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-button:hover {
+    background: #777;
+} 

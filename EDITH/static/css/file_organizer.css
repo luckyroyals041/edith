@@ -1,0 +1,97 @@
+.file-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.path-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#folder-path {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+#folder-path::placeholder {
+    color: #888;
+}
+
+.browse-btn {
+    padding: 8px 15px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.browse-btn:hover {
+    background: #777;
+}
+
+.organize-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.organize-btn:hover {
+    background: #45a049;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+    
+    .mobile-view {
+        display: block;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+} 
+
+/* Add these styles for mobile warning */
+.mobile-warning {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.mobile-warning p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.mobile-warning p:first-child {
+    font-size: 18px;
+    color: #ff605c;
+    font-weight: bold;
+}
+
+.mobile-warning .back-button {
+    margin-top: 20px;
+}
